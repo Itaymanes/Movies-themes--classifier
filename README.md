@@ -1,5 +1,5 @@
-# Movies-themes--classifier
-Can we recognize movies' trends across years by their subtitles only?
+# Movies themes classifier
+#### Can we recognize movies' trends across years by their subtitles only?
 
 The question: Can we recognize movies' trends across years by their subtitles only? inspired us to explore if we could give a reasonable answer, and it functions as the main goal for our final project in Data Science course in the Hebrew University. 
 Details of the data and the tools that we have been used during the project:
