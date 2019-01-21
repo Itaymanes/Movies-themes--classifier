@@ -45,6 +45,12 @@ In the graph below we picked three clusters and plotted their evolution over tim
 
 ![Plot](https://i.imgur.com/8PrMYib.png)
 
+
+<p align="center">
+  <img src="https://i.imgur.com/8PrMYib.png" width="350" title="hover text">
+</p>
+
+
 Below is example of the ability to see how the topics divided per selected year. For example the year 2014 we can see the mainly topics are Medicine and Middle East. In file attached you have the ability to choose a year and so see the topics related to that year. 
 
 
