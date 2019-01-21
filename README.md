@@ -43,11 +43,9 @@ In the graph below, we have selected different films and selected different topi
 
 In the graph below we picked three clusters and plotted their evolution over time in 100 years (1916-2016) in order to get insights about trends in the cinema. It is easy to see that at the beginning of the graph (till ~ 1935) the lines are more “noisy” since the amount of movies is much smaller and it is hard to say something strong about trends in this period of time. On the other hand, while the cluster ‘meds’ seems to oscillate around the same value, the cluster ‘US election’ have some noticeable spikes across time. 
 
-![Plot](https://i.imgur.com/8PrMYib.png)
-
 
 <p align="center">
-  <img src="https://i.imgur.com/8PrMYib.png" width="350" title="hover text">
+  <img src="https://i.imgur.com/8PrMYib.png" width="650" title="plot">
 </p>
 
 
