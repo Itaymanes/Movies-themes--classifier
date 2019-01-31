@@ -78,7 +78,7 @@ Multiplication of the two matrices (stages 2 & 5) to get one matrix of [Movies *
 In the graph below, we have selected different films and selected different topics to show how the topics are distributed across films. For Example “Pretty Woman” The main topics are Food, Bank/Money & Science fiction. Since we know that the film does not deal with science fiction and the cluster names is selected manually, we will conclude that there is an error in this matter. Besides, in general, we see that the division of the topics across the various films is entirely consistent with reality. 
 
 <p align="center">
-https://imgur.com/njNxjbE
+<img src="https://i.imgur.com/njNxjbE.png" width="450">
 </p>
 
 In the graph below we picked three clusters and plotted their evolution over time in 100 years (1916-2016) in order to get insights about trends in the cinema. It is easy to see that at the beginning of the graph (till ~ 1935) the lines are more “noisy” since the amount of movies is much smaller and it is hard to say something strong about trends in this period of time. On the other hand, while the cluster ‘meds’ seems to oscillate around the same value, the cluster ‘US election’ have some noticeable spikes across time. 
