@@ -26,6 +26,7 @@ o	Words_Movies_matrix – size of the matrix [Movies * Total_words]
 Applying the trained ‘glove.42B.300d.txt’ over our total words set in order to cluster the whole words to 200 clusters. Exporting the results to excel and manually define the name of the cluster and marking the general or the non-informative as 'cluster to remove'. 
 An example of the output:
 
+<p align="center">
 <table>
   <tr>
     <td> <b>Religions </b> </td>
@@ -36,7 +37,35 @@ An example of the output:
     <td>Bible</td>
     <td>Religious</td>
   </tr>
+  <tr>
+    <td> <b> Police \ Crime </b></td>
+    <td>Instigated</td>
+    <td>Police</td>
+    <td>Abuse</td>
+    <td>Crime</td>
+    <td>Violence</td>
+    <td>Charges</td>
+  </tr>
+  <tr>
+    <td> <b> Nature </b></td>
+    <td>Rosebushes</td>
+    <td>Flowers</td>
+    <td>Plants</td>
+    <td>Seed</td>
+    <td>Varieties</td>
+    <td>Bloom</td>
+  </tr>
+  <tr>
+    <td> <b> Neuroscience </b></td>
+    <td>inhibit</td>
+    <td>glucose</td>
+    <td>receptor</td>
+    <td>signaling</td>
+    <td>neural</td>
+    <td>nucleus</td>
+  </tr>
 </table>
+</p>
 
 ### 5-	Sparse_Matrix_Clusters –
 Using Total_words_set  from stage 1, and clusters dictionary from stage 3,  building sparse matrix of words and clusters:
