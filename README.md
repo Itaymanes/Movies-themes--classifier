@@ -1,20 +1,19 @@
 # Movies themes classifier
-#### Can we recognize movies' trends across years by their subtitles only?
+#### Can we recognize movies' trends across years only by their subtitles?
 
-The question: Can we recognize movies' trends across years by their subtitles only? Inspired us to explore if we could give a reasonable answer. Thus, this question stands as the main goal for our final project in Data Science course.
-In our opinion, in this case a good answer should hold at least two restrictions:
--	Sanity check - see if the themes (from here we will use the term – clusters to depict the themes) of the movies makes sense (i.e. will be surprising and misleading if ‘Lord of the rings’ have high value of ‘Us elections’).
+The question: Can we recognize movies' trends across years only by their subtitles, inspired us to explore if we could give a reasonable answer. Thus, this question stands as the main goal for our final project in Data Science course.
+In our opinion, in this case a good answer should fulfill at least two conditions:
+-	Sanity check - see if the themes (from here we will use the term – clusters to depict the themes) of the movies makes sense (e.g. will be surprising and misleading if ‘Lord of the rings’ have high value of ‘Us elections’).
 -	Significant difference of the frequent and usage of some clusters across decades or other periods of time (if there is not difference we stay without interesting insights). 
 
 Details of the data and the tools that we have been used during the project:
 -	Data - The data we used for this purpose is 17.6 Giga-bite tar file that we downloaded from the website www.opensubtitle.com, contains almost one million of subtitles for 105,412 movies since 1865 to 2016 and can be seen at www.imdb.com. 
 -	Glove – GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space. (https://nlp.stanford.edu/projects/glove/). We were using the trained 300 dimensions file – ‘glove.42B.300d.txt’.
--	Power BI - To analyze our data we used Microsoft power BI. This tool helped us analyze the information we produced. He presented us in a clear way the trends over the years. 
-Download Power BI Desktop 
+-	Power BI - To analyze our data we used Microsoft power BI. This tool helped us analyze easily the information we have produced. We use it to  represent in a clear way the trends over the years. 
 
-Main processing stages (for more details one can look at the codes in the appendix):
+Main processing stages (for more details one can look at the codes):
 ### 1-	Extract_tar_file – 
-Opening the tar file, for each movie taking only the first file in the folder (assuming that other versions does not differ in the context), and counting how many times shows every word, in the course of building two dictionaries and one set:
+Opening the tar file, for each movie taking only the first file in the folder (assuming that other versions does not differ in the context), and counting how many times appearing every word, in the course of building two dictionaries and one set:
 o	Movie_dictionary – {Movie's id1: {word1: counts1, word2:counts2, ….}, …}
 o	Year_dictionary – {Year1: Movie's id1, Movie's id2, …}
 o	Total_words_set –{word1,word2,….}
@@ -24,8 +23,19 @@ Using Movie_dictionary  and Total_words_set  from stage 1, building sparse matri
 o	Words_Movies_matrix – size of the matrix [Movies * Total_words]
 
 ### 3-4	Clustering & Export the results to excel 
-Applying the trained ‘glove.42B.300d.txt’ over our total words set in order to cluster the whole words to 200 clusters only. Exporting the results to excel and manually define the name of the cluster and marking the general or the non-informative as 'cluster to remove'. 
+Applying the trained ‘glove.42B.300d.txt’ over our total words set in order to cluster the whole words to 200 clusters. Exporting the results to excel and manually define the name of the cluster and marking the general or the non-informative as 'cluster to remove'. 
 An example of the output:
+
+<table>
+<tr>
+  <td>Religions</td>
+  <td>Devout</td>
+  <td>Church</td>
+  <td>Christian</td>
+  <td>Jesus Christ</td>
+  <td>Bible</td>
+  <td>Religious</td>
+</tr>
 
 
 ### 5-	Sparse_Matrix_Clusters –
