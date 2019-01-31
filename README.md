@@ -27,16 +27,16 @@ Applying the trained ‘glove.42B.300d.txt’ over our total words set in order 
 An example of the output:
 
 <table>
-<tr>
-  <td>Religions</td>
-  <td>Devout</td>
-  <td>Church</td>
-  <td>Christian</td>
-  <td>Jesus Christ</td>
-  <td>Bible</td>
-  <td>Religious</td>
-</tr>
-
+  <tr>
+    <td> <b>Religions </b> </td>
+    <td>Devout</td>
+    <td>Church</td>
+    <td>Christian</td>
+    <td>Jesus Christ</td>
+    <td>Bible</td>
+    <td>Religious</td>
+  </tr>
+</table>
 
 ### 5-	Sparse_Matrix_Clusters –
 Using Total_words_set  from stage 1, and clusters dictionary from stage 3,  building sparse matrix of words and clusters:
