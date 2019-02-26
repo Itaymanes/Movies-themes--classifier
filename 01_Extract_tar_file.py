@@ -32,9 +32,8 @@ if not os.path.isfile(pickle_file):
     with tarfile.open('C:/Users/itay manes/Downloads/en.tar.gz') as archive:
         for ind, member in enumerate(archive):
             count = defaultdict(int)
-            if (ind % 5000 == 0) and (ind > 0):
-                break
-                #print(str(ind) +' iteration')
+            if (ind % 5000 == 0):
+                print(str(ind) +' iteration')
             movie_id, year = extract_year_movie_dict(member.name)
             if not (movie_id in year_dict[year]) and not (year[0] == '0'):               # using only single subtitle file
                 year_dict[year].add(movie_id)
