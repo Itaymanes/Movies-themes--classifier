@@ -1,7 +1,7 @@
 # Movies themes classifier
 #### Can we recognize movies' trends across years only by their subtitles?
 
-The question: Can we recognize movies' trends across years only by their subtitles, inspired us to explore if we could give a reasonable answer. Thus, this question stands as the main goal for our final project in Data Science course.
+The question: Can we recognize movies' trends across years only by their subtitles, inspired us to explore if we could give a reasonable answer. This question stands as the main goal for our final project in Data Science course.
 In our opinion, in this case a good answer should fulfill at least two conditions:
 -	Sanity check - see if the themes (from here we will use the term – clusters to depict the themes) of the movies makes sense (e.g. will be surprising and misleading if ‘Lord of the rings’ have high value of ‘Us elections’).
 -	Significant difference of the frequent and usage of some clusters across decades or other periods of time (if there is not difference we stay without interesting insights). 
