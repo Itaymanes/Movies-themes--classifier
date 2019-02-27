@@ -7,6 +7,7 @@ import sys, codecs, csv
 import numpy
 from collections import defaultdict
 import pickle
+import codecs
 import os
 
 
@@ -40,7 +41,7 @@ f = codecs.open(input_vector_file, 'r', 'utf-8')
 
 df, labels_array, array_len  = build_word_vector_matrix(total_words_set)
 
-clusters_to_make = int(60)
+clusters_to_make = int(200)
 kmeans_model = KMeans(init='k-means++', n_clusters=clusters_to_make, n_init=10)
 kmeans_model.fit(df)
 
