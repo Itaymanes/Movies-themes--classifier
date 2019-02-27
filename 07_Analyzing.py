@@ -63,8 +63,3 @@ else:
     with open(pickle_final_mat, 'rb') as in_file:
         df = pickle.load(in_file)
         df_year = pickle.load(in_file)
-
-
-def Sample_plot(df):
-    M_name_list = ['Pretty Woman(1990)','Jurassic Park(1993)', 'The Birds(1963)', 'Kill Bill: Vol. 1(2003)', 'Shrek(2001)','The Matrix(1999)']
-    M_id_list = ['100405', '107290', '56869', '266697', '126029','133093']
